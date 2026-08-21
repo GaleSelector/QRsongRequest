@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Richiedi una canzone</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="container">
+
+    <div class="card">
+
+      <div class="icon">🎵</div>
+
+      <h1>Richiedi una canzone</h1>
+
+      <p class="description">
+        Inserisci il titolo e l'artista della canzone che vuoi richiedere.
+      </p>
+
+      <form id="songForm">
+
+        <label for="title">Titolo della canzone</label>
+
+        <input
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Es. Bohemian Rhapsody"
+          required
+          autocomplete="off"
+        >
+
+        <label for="artist">Artista</label>
+
+        <input
+          type="text"
+          id="artist"
+          name="artist"
+          placeholder="Es. Queen"
+          required
+          autocomplete="off"
+        >
+
+        <button type="submit" id="submitButton">
+          Invia richiesta
+        </button>
+
+      </form>
+
+      <p id="message"></p>
+
+    </div>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
